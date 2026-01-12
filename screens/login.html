@@ -1,0 +1,33 @@
+<section class="card">
+  <h1>Login</h1>
+  <p class="muted">Für die Demo wählst du einen Mitarbeiter aus. Optional kannst du auch einen QR Code simulieren.</p>
+
+  <div class="grid2">
+    <div>
+      <label class="label" for="selMitarbeiter">Mitarbeiter</label>
+      <select id="selMitarbeiter" class="input"></select>
+      <div class="row">
+        <button class="btn btn--primary" id="btnLogin">Anmelden</button>
+        <button class="btn" id="btnLogout">Abmelden</button>
+      </div>
+    </div>
+
+    <div>
+      <div class="box">
+        <div class="box__title">QR Simulation</div>
+        <p class="muted">Tippe eine Personalnummer ein und bestätige.</p>
+        <label class="label" for="inpPersNr">Personalnummer</label>
+        <input id="inpPersNr" class="input" inputmode="numeric" placeholder="z. B. 1002" />
+        <div class="row">
+          <button class="btn" id="btnQrLogin">QR Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hr"></div>
+
+  <div class="row">
+    <button class="btn" data-nav="#/auftraege">Weiter zu Aufträgen</button>
+  </div>
+</section>

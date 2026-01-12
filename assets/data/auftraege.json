@@ -1,0 +1,34 @@
+[
+  {
+    "jobId": "4711",
+    "titel": "Auftrag 4711",
+    "beschreibung": "Baugruppe A, Station 1",
+    "gesamtMenge": 120,
+    "zugewiesenAn": [
+      "m1001",
+      "m1002",
+      "m1003",
+      "m1004"
+    ]
+  },
+  {
+    "jobId": "4712",
+    "titel": "Auftrag 4712",
+    "beschreibung": "Baugruppe B, Station 2",
+    "gesamtMenge": 80,
+    "zugewiesenAn": [
+      "m1001",
+      "m1002"
+    ]
+  },
+  {
+    "jobId": "4713",
+    "titel": "Auftrag 4713",
+    "beschreibung": "Nacharbeit, Sichtprüfung",
+    "gesamtMenge": 60,
+    "zugewiesenAn": [
+      "m1003",
+      "m1004"
+    ]
+  }
+]

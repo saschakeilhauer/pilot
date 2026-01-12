@@ -1,0 +1,22 @@
+[
+  {
+    "id": "m1001",
+    "persnr": "1001",
+    "name": "Alex Müller"
+  },
+  {
+    "id": "m1002",
+    "persnr": "1002",
+    "name": "Bianca Schmidt"
+  },
+  {
+    "id": "m1003",
+    "persnr": "1003",
+    "name": "Chris Wagner"
+  },
+  {
+    "id": "m1004",
+    "persnr": "1004",
+    "name": "Dana Becker"
+  }
+]

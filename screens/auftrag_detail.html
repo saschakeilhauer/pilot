@@ -1,0 +1,57 @@
+<section class="card">
+  <div class="row row--space">
+    <h1 id="jobTitle">Auftrag</h1>
+    <span class="badge" id="jobState">OFFEN</span>
+  </div>
+
+  <div class="grid3">
+    <div class="kpi">
+      <div class="kpi__label">Gesamtmenge</div>
+      <div class="kpi__value" id="kpiTotal">0</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi__label">Gemeldet</div>
+      <div class="kpi__value" id="kpiDone">0</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi__label">Rest</div>
+      <div class="kpi__value" id="kpiRest">0</div>
+    </div>
+  </div>
+
+  <div class="hr"></div>
+
+  <div class="row">
+    <button class="btn btn--primary" id="btnStart">Start</button>
+    <button class="btn" id="btnStop">Ende</button>
+    <button class="btn" id="btnFinish">Fertig</button>
+  </div>
+
+  <div class="box">
+    <div class="box__title">Mengenmeldung</div>
+    <p class="muted">Bei Ende meldest du eine Teilmenge. Bei Fertig wird die Restmenge vorgeschlagen.</p>
+
+    <label class="label" for="inpQty">Menge</label>
+    <input id="inpQty" class="input" inputmode="numeric" placeholder="z. B. 10" />
+
+    <div class="row">
+      <button class="btn" id="btnSuggestRest">Rest vorschlagen</button>
+      <button class="btn" id="btnQuick10">+10</button>
+      <button class="btn" id="btnQuick25">+25</button>
+    </div>
+
+    <div class="hint" id="qtyHint">Hinweis: Überbuchung ist technisch gesperrt.</div>
+  </div>
+
+  <div class="box">
+    <div class="box__title">Verlauf</div>
+    <div id="history" class="history"></div>
+  </div>
+
+  <div class="hr"></div>
+
+  <div class="row">
+    <button class="btn" data-nav="#/auftraege">Zurück</button>
+    <button class="btn" data-nav="#/dokumente">Dokumente zum Auftrag</button>
+  </div>
+</section>
