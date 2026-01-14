@@ -1,0 +1,35 @@
+<section class="card">
+  <div class="row row--space">
+    <h1>Gemeinkosten</h1>
+    <span class="badge" id="gkState"></span>
+  </div>
+
+  <div class="panel">
+    <div class="panel__title">Auswahl</div>
+    <div id="gkList" class="chipgrid"></div>
+  </div>
+
+  <div class="hero hero--compact">
+    <div class="hero__timer">
+      <div class="hero__label">Läuft</div>
+      <div class="hero__value" id="gkTimer">00:00:00</div>
+      <div class="hero__sub" id="gkSub"></div>
+    </div>
+    <div class="hero__actions">
+      <button class="btn btn--xl btn--primary" id="btnGkStart">Start</button>
+      <button class="btn btn--xl" id="btnGkStop">Ende</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel__title">Verlauf</div>
+    <div id="gkHistory" class="history"></div>
+  </div>
+
+  <div class="hr"></div>
+
+  <div class="row">
+    <button class="btn btn--ghost" data-nav="#/auftraege">Aufträge</button>
+    <button class="btn btn--ghost" data-nav="#/inbox">Inbox</button>
+  </div>
+</section>

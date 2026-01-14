@@ -1,0 +1,88 @@
+<section class="card">
+  <div class="row row--space">
+    <div>
+      <div class="muted" id="jobMeta"></div>
+      <h1 id="jobTitle">Auftrag</h1>
+    </div>
+    <span class="badge" id="jobState"></span>
+  </div>
+
+  <div class="kpiGrid">
+    <div class="kpi">
+      <div class="kpi__label">Menge</div>
+      <div class="kpi__value" id="kpiQty"></div>
+      <div class="kpi__sub" id="kpiQtySub"></div>
+    </div>
+
+    <div class="kpi">
+      <div class="kpi__label">Zeit</div>
+      <div class="kpi__value" id="kpiTime"></div>
+      <div class="kpi__sub" id="kpiTimeSub"></div>
+    </div>
+
+    <div class="kpi">
+      <div class="kpi__label">Progress</div>
+      <div class="progress">
+        <div class="progress__bar" id="progBar"></div>
+      </div>
+      <div class="kpi__sub" id="progSub"></div>
+    </div>
+  </div>
+
+  <div class="hr"></div>
+
+  <div class="hero">
+    <div class="hero__timer">
+      <div class="hero__label">Läuft</div>
+      <div class="hero__value" id="liveTimer">00:00:00</div>
+      <div class="hero__sub" id="liveSub"></div>
+    </div>
+    <div class="hero__actions">
+      <button class="btn btn--xl btn--primary" id="btnStart">Start</button>
+      <button class="btn btn--xl btn--ghost" id="btnCallForemanJob">Vorarbeiter rufen</button>
+      <button class="btn btn--xl" id="btnStop">Ende</button>
+      <button class="btn btn--xl btn--good" id="btnFinish">Fertig</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel__title">Mengenmeldung</div>
+    <div class="row">
+      <input id="inpQty" class="input input--big" inputmode="numeric" placeholder="Menge" />
+      <button class="btn" id="btnRest">Rest</button>
+      <button class="btn" id="btnPlus10">+10</button>
+      <button class="btn" id="btnPlus25">+25</button>
+    </div>
+    <div class="muted small" id="qtyHint"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel__title">Dokumente</div>
+    <div class="list">
+      <a class="item" id="lnkZeichnung" target="_blank" rel="noopener">
+        <div class="item__title">Zeichnung</div>
+        <div class="item__sub">PDF</div>
+      </a>
+      <a class="item" id="lnkAnweisung" target="_blank" rel="noopener">
+        <div class="item__title">Arbeitsanweisung</div>
+        <div class="item__sub">PDF</div>
+      </a>
+      <a class="item" id="lnkModell" href="#">
+        <div class="item__title">3D Modell</div>
+        <div class="item__sub">Viewer</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel__title">Verlauf</div>
+    <div id="history" class="history"></div>
+  </div>
+
+  <div class="hr"></div>
+
+  <div class="row">
+    <button class="btn btn--ghost" data-nav="#/auftraege">Zurück</button>
+    <button class="btn btn--ghost" data-nav="#/inbox">Inbox</button>
+  </div>
+</section>
